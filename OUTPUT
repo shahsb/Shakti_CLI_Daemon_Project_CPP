@@ -1,0 +1,361 @@
+## TERMINAL-1 -- DAEMON:
+---
+	[root@1e8dd3605467 ReliaQuest]# ./number_daemon
+	Number daemon started on /tmp/number_daemon.sock
+	Number Daemon running. Press Ctrl+C to stop.
+
+## TERMINAL-2: CLI-1:
+---
+	Microsoft Windows [Version 10.0.26100.6725]
+	(c) Microsoft Corporation. All rights reserved.
+
+	C:\Users\shakt>docker exec -it 1e8dd3605467 /bin/bash
+	[root@1e8dd3605467 /]# cd ReliaQuest/
+	[root@1e8dd3605467 ReliaQuest]# ./number_cli
+	Number Store CLI - Connected to daemon
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			30 | 2025-10-04 06:30:34 (1759559434)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 1
+	Enter number to insert: 20
+	Number 20 inserted successfully.
+	Timestamp: 2025-10-04 06:30:43 (1759559443)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			20 | 2025-10-04 06:30:43 (1759559443)
+			30 | 2025-10-04 06:30:34 (1759559434)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			20 | 2025-10-04 06:30:43 (1759559443)
+			30 | 2025-10-04 06:30:34 (1759559434)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 100
+	Number 100 found.
+	Inserted at: 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 60
+	Number 60 not found.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			20 | 2025-10-04 06:30:43 (1759559443)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			20 | 2025-10-04 06:30:43 (1759559443)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 10
+	Number 10 not found.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 30
+	Number 30 not found.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 100
+	Number 100 found.
+	Inserted at: 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+	No numbers stored.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6):
+
+
+## TERMINAL-3: 
+---
+	Microsoft Windows [Version 10.0.26100.6725]
+	(c) Microsoft Corporation. All rights reserved.
+
+	C:\Users\shakt>docker exec -it 1e8dd3605467 /bin/bash
+	[root@1e8dd3605467 /]# cd ReliaQuest/
+	[root@1e8dd3605467 ReliaQuest]# ls
+	cli.cpp  cli.cpp_old  common.h  common.h_old  daemon.cpp  makefile  number_cli  number_daemon
+	[root@1e8dd3605467 ReliaQuest]# ./number_cli
+	Number Store CLI - Connected to daemon
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 1
+	Enter number to insert: 30
+	Number 30 inserted successfully.
+	Timestamp: 2025-10-04 06:30:34 (1759559434)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			30 | 2025-10-04 06:30:34 (1759559434)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			20 | 2025-10-04 06:30:43 (1759559443)
+			30 | 2025-10-04 06:30:34 (1759559434)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 10
+	Number 10 found.
+	Inserted at: 2025-10-04 06:30:06 (1759559406)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 5
+	Enter number to find: 200
+	Number 200 not found.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 2
+	Enter number to delete: 30
+	Number 30 deleted successfully.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			10 | 2025-10-04 06:30:06 (1759559406)
+			20 | 2025-10-04 06:30:43 (1759559443)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+
+	Stored numbers (sorted):
+		Number | Timestamp
+	-----------------------------------
+			20 | 2025-10-04 06:30:43 (1759559443)
+		   100 | 2025-10-04 06:30:58 (1759559458)
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 4
+	All numbers deleted successfully.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6): 3
+	No numbers stored.
+
+	=== Number Store CLI ===
+	1. Insert a number
+	2. Delete a number
+	3. Print all numbers
+	4. Delete all numbers
+	5. Find a number
+	6. Exit
+	Choose an option (1-6):
